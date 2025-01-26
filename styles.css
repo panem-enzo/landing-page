@@ -11,7 +11,7 @@ body {
 
 ul {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     list-style: none;
 }
 
@@ -23,7 +23,15 @@ a {
 button {
     color: white;
     background-color: #3882F6;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    padding: 8px 32px;
+}
+
+span {
+    display: block;
 }
 
 .header, .home, .footer {
@@ -35,9 +43,20 @@ button {
     padding: 16px 0;
 }
 
+.header a, .home .left {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .header {
     display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
     justify-content: space-between;
+    width: 850px;
 }
 
 .header .left {
@@ -50,7 +69,8 @@ button {
     display: flex;
     justify-content: center;
     gap: 32px;
-    /* height: 100vh; */
+    /* height: 30vh; */
+    padding: 82px;
 }
 
 .home .left {
@@ -59,19 +79,83 @@ button {
 
 .home .left h1 {
     font-size: 48px;
-    font-color: #F9FAF8;
+    color: #F9FAF8;
     font-weight: 900;
 }
 
+.home .left p {
+    margin-bottom: 16px;
+}
+
 .home .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
     background-color: gray;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container {
+    display: flex;
+    gap: 48px;
+}
+
+.item {
+    width: 200px;
+    text-align: center;
+}
+
+.square {
+    height: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 16px;
+}
+
 .testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightgray;
+}
+
+.testimonial-container {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 64px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 36px 82px;
+    border-radius: 8px;
+    gap: 100px;
+}
+
+.cta-container button {
+    border: 3px solid white;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    padding: 32px;
 }
